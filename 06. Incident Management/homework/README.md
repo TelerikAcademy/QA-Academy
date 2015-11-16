@@ -36,5 +36,5 @@
 |Severity  ||
 
 * Prepare another bug report
-	* for the bug shown in this video: http://www.youtube.com/watch?v=xJg7k8QOGtM&feature=related
+	* for the bug shown in this [video] (http://www.youtube.com/watch?v=xJg7k8QOGtM&feature=related)
 	* for this sample defect: After logging into Gmail, it navigates to Google.com
