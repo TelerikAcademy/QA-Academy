@@ -2,7 +2,7 @@
 ## Selenium IDE
 ### Fix the XPath
 
- * Go to the following web page [www.dir.bg](www.dir.bg) and try to find the elements by their XPath.
+ * Go to the following web page [www.dir.bg](http://www.dir.bg) and try to find the elements by their XPath.
 Below there are some XPaths, to use them you have to fix them a bit. Make the necessary changes and locate the elements.
 
 As a result of this task you have to prepare Selenium Test case with the three correct XPaths.
@@ -73,7 +73,7 @@ Tips: The start hour always should be 00:00
 ### Regular Expressions Results
 If you use the following regular expressions what will be a possible result?
 </br>
-<img src="images/regExp.jpg" />
+<img src="images/regExp.png" />
 
  Regular Expression | Result (Xpath)|
 | ------------- |:-------------:|
