@@ -1,0 +1,79 @@
+body
+{
+	font-size:18px;
+	color:#000000;
+	background-color:#ffffff;
+	margin:0px;
+	background-image:url('/images/gradientfromtop.gif');
+	background-repeat:repeat-x;
+}
+
+body,p,h1,h2,h3,h4,table,td,th,ul,ol,textarea,input
+{
+font-family:Corbel,sans-serif;
+}
+.content
+{
+	width:800px;
+	margin-left:auto;
+	margin-right:auto;
+	border:2px solid rgb(155,187,89);
+	margin-top:100px;
+	border-radius: 15px;
+}
+.posted
+{
+	width:500px;
+	float:left;
+	text-align:left;
+	padding-bottom:0px;
+	padding-top:40px;
+	padding-left:50px;
+}
+.phone
+{
+	width:200px;
+	height:60px;
+	float:right;
+	text-align:center;
+	margin:2px;
+	padding:2px;
+}
+.NN
+{
+	border:2px solid rgb(155,187,89);
+	padding:5px 10px;
+}
+.NP
+{
+	font-size:20px;
+}
+div.clear 
+{
+clear: both;
+}
+
+}
+.cont
+{
+	width:200px;
+	float:right;
+}
+.comm
+{
+	width:700px;
+	margin-left:auto;
+	margin-right:auto;
+	border: 2px solid rgb(155,187,89);
+}
+.foot
+{
+	width=700px;
+	font-size:12px;
+	text-align:center;
+}
+p
+{
+	margin:0px;
+	padding:0px;
+}
