@@ -12,7 +12,7 @@ As a result of this task you have to prepare Selenium Test case with the three c
 ### Create Automated Test
 Below are some sample workflows. Create Selenium Test cases for them.
 
-* **Google Test Case**
+## **Google Test Case**
 1.	Open Firefox Browser 
 2.	Open Selenium IDE (and minimize)
 3.	In the address bar, type [http://www.google.com/](http://www.google.com/)
@@ -24,20 +24,20 @@ Below are some sample workflows. Create Selenium Test cases for them.
 9.	Verify "QA Testing" text is present anywhere in the search results
 
 After finishing your recording: 
-1.	Stop recording 
-2.	Save the test case 
-3.	Run the test case 
-4.	Review the test case and fix any errors 
-* Option 1
-	* Fast to slow 
-* Option 2 
-	* setSpeed 
-* Option 3 
-	* pause 
-* Option 4 
-	* Change AssertTitle to waitForTitle 
-	* Change VerifyTextPresent to waitForTextPresent 
-5.	Save the reviewed test case 
+* Stop recording 
+* Save the test case 
+* Run the test case 
+* Review the test case and fix any errors 
+	* Option 1
+		* Fast to slow 
+	* Option 2 
+		* setSpeed 
+	* Option 3 
+		* pause 
+	* Option 4 
+		* Change AssertTitle to waitForTitle 
+		* Change VerifyTextPresent to waitForTextPresent 
+* Save the reviewed test case 
 
 ### **BG Coder Test Case**
 1.	Open [http://bgcoder.com](http://bgcoder.com)
@@ -73,7 +73,7 @@ Tips: The start hour always should be 00:00
 ### Regular Expressions Results
 If you use the following regular expressions what will be a possible result?
 </br>
-<img class="slide-image" src="imgs/regExp.jpg" />
+<img src="images/regExp.jpg" />
 
  Regular Expression | Result (Xpath)|
 | ------------- |:-------------:|
