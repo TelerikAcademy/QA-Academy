@@ -1,7 +1,7 @@
 # Selenium WebDriver
 ## Homework
+1. Go to [https://www.telerik.com/](https://www.telerik.com/), form navigation menu click on “Your Account” and then click on “Create an account for free”
 
-1.	Go to https://www.telerik.com/, form navigation menu click on “Your Account” and then click on “Create an account for free”.
 * Fill the form as shown below – fill your email, first name, and leave Company Name blank. Verify that a message about missing Company name appears. 
 
 </br>
@@ -9,11 +9,12 @@
 
 * Now fill in Company name using C# function, use unique name every time. Verify the message isn’t present anymore.
 * Test if the backend validation works properly. For that you’ll have to disable JavaScript in your test and then start editing. Run the test a couple of times to verify that it works correctly. You can try to delete a login cookie.
+</br>
 Think of an appropriate way to organize your tests and use 
-	*	Base test class with methods missing in WebDriver
-	*	Page Object Model
+	* Base test class with methods missing in WebDriver
+	* Page Object Model
 
-2.	Using Selenium WebDriver create a report for valid IP addresses for each country in the world. The test should navigate to ‘http://services.ce3c.be/ciprg/and extract all IP ranges for each listed country in one place. The complete list should then be parsed as C# objects and printed to the Console in the following format: `“{CountryName} - {IPAddress}”`. The IP Address should be the first IP address from the first IP Range for each country.
+2.Using Selenium WebDriver create a report for valid IP addresses for each country in the world. The test should navigate to ‘http://services.ce3c.be/ciprg/and extract all IP ranges for each listed country in one place. The complete list should then be parsed as C# objects and printed to the Console in the following format: `“{CountryName} - {IPAddress}”`. The IP Address should be the first IP address from the first IP Range for each country
 </br>
 Hint: You can format the IP Ranges result as JSON (formatting by input): 
 
