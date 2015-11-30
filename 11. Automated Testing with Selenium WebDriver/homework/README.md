@@ -1,20 +1,20 @@
 # Selenium WebDriver
 ## Homework
-1. Go to [https://www.telerik.com/](https://www.telerik.com/), form navigation menu click on ìYour Accountî and then click on ìCreate an account for freeî
+1. Go to [https://www.telerik.com/](https://www.telerik.com/), form navigation menu click on ‚ÄúYour Account‚Äù and then click on ‚ÄúCreate an account for free‚Äù
 
-* Fill the form as shown below ñ fill your email, first name, and leave Company Name blank. Verify that a message about missing Company name appears. 
+* Fill the form as shown below ‚Äì fill your email, first name, and leave Company Name blank. Verify that a message about missing Company name appears. 
 
 </br>
 <img src="images/form.png" />
 
-* Now fill in Company name using C# function, use unique name every time. Verify the message isnít present anymore.
-* Test if the backend validation works properly. For that youíll have to disable JavaScript in your test and then start editing. Run the test a couple of times to verify that it works correctly. You can try to delete a login cookie.
+* Now fill in Company name using C# function, use unique name every time. Verify the message isn‚Äôt present anymore.
+* Test if the backend validation works properly. For that you‚Äôll have to disable JavaScript in your test and then start editing. Run the test a couple of times to verify that it works correctly. You can try to delete a login cookie.
 </br>
 Think of an appropriate way to organize your tests and use 
 	* Base test class with methods missing in WebDriver
 	* Page Object Model
 
-2.Using Selenium WebDriver create a report for valid IP addresses for each country in the world. The test should navigate to ëhttp://services.ce3c.be/ciprg/and extract all IP ranges for each listed country in one place. The complete list should then be parsed as C# objects and printed to the Console in the following format: `ì{CountryName} - {IPAddress}î`. The IP Address should be the first IP address from the first IP Range for each country
+2.Using Selenium WebDriver create a report for valid IP addresses for each country in the world. The test should navigate to [http://services.ce3c.be/ciprg/](http://services.ce3c.be/ciprg/)and extract all IP ranges for each listed country in one place. The complete list should then be parsed as C# objects and printed to the Console in the following format: `‚Äú{CountryName} - {IPAddress}‚Äù`. The IP Address should be the first IP address from the first IP Range for each country
 </br>
 Hint: You can format the IP Ranges result as JSON (formatting by input): 
 
@@ -40,6 +40,6 @@ Example:
 },
   ```
 
-In this IP range the possible IP addresses are (59 ñ 56 + 1) * 256 = 1024
+In this IP range the possible IP addresses are (59 ‚Äì 56 + 1) * 256 = 1024
 
 
