@@ -14,7 +14,7 @@ Think of an appropriate way to organize your tests and use
 	* Base test class with methods missing in WebDriver
 	* Page Object Model
 
-2.Using Selenium WebDriver create a report for valid IP addresses for each country in the world. The test should navigate to [http://services.ce3c.be/ciprg/](http://services.ce3c.be/ciprg/)and extract all IP ranges for each listed country in one place. The complete list should then be parsed as C# objects and printed to the Console in the following format: `“{CountryName} - {IPAddress}”`. The IP Address should be the first IP address from the first IP Range for each country
+2.Using Selenium WebDriver create a report for valid IP addresses for each country in the world. The test should navigate to [http://services.ce3c.be/ciprg/](http://services.ce3c.be/ciprg/) and extract all IP ranges for each listed country in one place. The complete list should then be parsed as C# objects and printed to the Console in the following format: `“{CountryName} - {IPAddress}”`. The IP Address should be the first IP address from the first IP Range for each country
 </br>
 Hint: You can format the IP Ranges result as JSON (formatting by input): 
 
