@@ -1,0 +1,1 @@
+SORT < ..\02_Commands\Lorem.txt > sorted.txt
