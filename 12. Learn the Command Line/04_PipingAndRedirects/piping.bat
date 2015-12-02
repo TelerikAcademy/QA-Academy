@@ -1,0 +1,1 @@
+echo f | xcopy /f /y piping.bat piping.txt
