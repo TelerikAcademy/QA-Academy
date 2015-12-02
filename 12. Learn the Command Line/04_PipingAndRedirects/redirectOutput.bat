@@ -1,1 +1,0 @@
-systeminfo>systeminfo.txt
