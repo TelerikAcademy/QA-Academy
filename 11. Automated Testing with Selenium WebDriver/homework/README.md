@@ -5,7 +5,7 @@
 * Fill the form as shown below, leave "Потребителско име" blank. Verify that a message about missing username appears. 
 
 </br>
-<img src="images/form.png" />
+<img src="images/registrationForm.png" />
 
 * Now fill in "Потребителско име" using C# function, use unique name every time. Verify the message isn’t present anymore.
 * Test if the backend validation works properly. For that you’ll have to disable JavaScript in your test and then start editing. Run the test a couple of times to verify that it works correctly. You can try to delete a login cookie.
