@@ -1,13 +1,13 @@
 # Selenium WebDriver
 ## Homework
-1. Go to [https://www.telerik.com/](https://www.telerik.com/), form navigation menu click on “Your Account” and then click on “Create an account for free”
+1. Go to [http://stage.telerikacademy.com/](http://stage.telerikacademy.com/), and click on "Регистрация"
 
-* Fill the form as shown below – fill your email, first name, and leave Company Name blank. Verify that a message about missing Company name appears. 
+* Fill the form as shown below, leave "Потребителско име" blank. Verify that a message about missing username appears. 
 
 </br>
 <img src="images/form.png" />
 
-* Now fill in Company name using C# function, use unique name every time. Verify the message isn’t present anymore.
+* Now fill in "Потребителско име" using C# function, use unique name every time. Verify the message isn’t present anymore.
 * Test if the backend validation works properly. For that you’ll have to disable JavaScript in your test and then start editing. Run the test a couple of times to verify that it works correctly. You can try to delete a login cookie.
 </br>
 Think of an appropriate way to organize your tests and use 
