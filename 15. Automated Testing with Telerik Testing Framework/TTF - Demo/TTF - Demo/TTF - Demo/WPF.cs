@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 
@@ -27,7 +28,7 @@ namespace UnitTestProject1
     [TestClass]
     public class WPF : BaseWpfTest
     {
-        const string appLocation = @"C:\Users\darakchiev\Desktop\WPF_DataFrom\WPF_DataFrom\bin\Debug\WPF_DataFrom.exe";
+        readonly string appLocation = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName + @"\Application\WPF_DataFrom.exe";
 
         #region [Setup / TearDown]
 
