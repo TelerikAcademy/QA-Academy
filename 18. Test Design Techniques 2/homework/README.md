@@ -41,9 +41,9 @@ Create logical test cases based on that diagram.
 1.	Determine the set of pairwise test cases for the examples below. Do it once by using an orthogonal array and once again – using an all-pairs algorithm
 
  *	Suppose you need to test compatibility of various kiosk configurations based on three major factors, each set to one of the options shown:
-Operating System: Windows XP or Linux
-Browser: Internet Explorer (Windows only), Netscape, or Opera
-Connection: DSL, dial-up, or cable
+Operating System: Windows XP or Linux <br>
+Browser: Internet Explorer (Windows only), Netscape, or Opera <br>
+Connection: DSL, dial-up, or cable <br>
 
  *	Suppose you need to test a web site and the combinations of software it should operate with, considering the following factors:
 Browser - Internet Explorer, Netscape, Mozilla, and Opera <br>
