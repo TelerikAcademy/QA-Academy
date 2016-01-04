@@ -45,7 +45,7 @@ Operating System: Windows XP or Linux <br>
 Browser: Internet Explorer (Windows only), Netscape, or Opera <br>
 Connection: DSL, dial-up, or cable <br>
 
- *	Suppose you need to test a web site and the combinations of software it should operate with, considering the following factors:
+ *	Suppose you need to test a web site and the combinations of software it should operate with, considering the following factors: <br>
 Browser - Internet Explorer, Netscape, Mozilla, and Opera <br>
 Plug-in - None, RealPlayer, and MediaPlayer <br>
 Client operating system - Windows 95, 98, ME, NT, 2000, and XP<br>
