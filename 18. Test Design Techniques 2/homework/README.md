@@ -40,7 +40,7 @@ Create logical test cases based on that diagram.
 ## Pairwise Testing
 1.	Determine the set of pairwise test cases for the examples below. Do it once by using an orthogonal array and once again – using an all-pairs algorithm
 
- *	Suppose you need to test compatibility of various kiosk configurations based on three major factors, each set to one of the options shown:
+ *	Suppose you need to test compatibility of various kiosk configurations based on three major factors, each set to one of the options shown:<br>
 Operating System: Windows XP or Linux <br>
 Browser: Internet Explorer (Windows only), Netscape, or Opera <br>
 Connection: DSL, dial-up, or cable <br>
