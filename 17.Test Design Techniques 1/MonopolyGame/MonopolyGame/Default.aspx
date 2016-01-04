@@ -486,9 +486,10 @@
                                 </ConnectorsCollection>
                             </ShapeDefaultsSettings>
                             <ShapesCollection>
-                                <telerik:DiagramShape Id="Player" Background="#8db310" Width="70" Height="70" Y="100"
+                                <telerik:DiagramShape Id="Player" Width="70" Height="70" Y="100"
                                     X="20" Path="M0.5,37.5 L37.5,0.5 L74.5,37.5 M0.5,37.5 L74.5,37.5 L37.5,74.5 z">
                                     <ContentSettings Text="Player" Color="#fff" />
+                                    <FillSettings Color="#8db310" />
                                 </telerik:DiagramShape>
                             </ShapesCollection>
                             <ClientEvents OnLoad="diagram_load" />
