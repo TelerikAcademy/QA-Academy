@@ -25,11 +25,8 @@ Using the rules above construct a decision table showing all possible combinatio
  *	Make a state transition table from the diagram
  *	Define logical test cases
 
-<<<<<<< HEAD
+
 **Tape player**
-=======
-`Tape player`
->>>>>>> 8db708db5b38259b79b31af44a7f31525ecaa8a1
 *	A tape player has three operations:  play, fast forward and fast play.
 *	Play and fast forward are activated using the play and fast forward button respectively. These operations can be cancelled using the stop button.  When in play mode,  the fast forward can be used to fast play. When in fast play mode, the fast forward button can be pressed again to enter fast forward or the stop button can be used to return to play.  When in fast forward the play button can be pressed to enter play mode directly.
 
