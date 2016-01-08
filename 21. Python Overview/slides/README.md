@@ -2,7 +2,7 @@
 <!-- attr: { class:'slide-title', hasScriptWrapper:true } -->
 # Python Overview
 <div class="signature">
-    <p class="signature-course">QA Academy/p>
+    <p class="signature-course">QA Academy</p>
     <p class="signature-initiative">Telerik Software Academy</p>
     <a href="http://academy.telerik.com" class="signature-link">http://academy.telerik.com</a>
 </div>
@@ -36,16 +36,21 @@ The Zen of Python
 # Python Overview
 ##  Usage, Versions, Installation
 
+<!-- attr: {style: 'font-size: 0.95em'} -->
 # Python Overview
 
 - Python is a widely used general-purpose, high-level programming language
-  - Its design philosophy emphasizes code readability
-  - Its syntax allows programmers to express concepts in fewer lines of code
-  - The language provides constructs intended to enable clear programs on both a small and large scale
+  - Design philosophy that emphasizes code readability
+  - Syntax allows programmers to express concepts in fewer lines of code
+  - Provides constructs intended to enable clear programs on both a small and large scale
 - Python supports multiple programming paradigms, including
-  - Object-
+  - Object-oriented
   - Imperative and functional programming
-- It features a dynamic type system and automatic memory management
+
+<!-- attr: {style: 'font-size: 0.9em'} -->
+# Python Overview
+
+- It features a **dynamic type system** and **automatic memory management**
 - Python is widely used for:
   - Automations scripts, Sikuli
   - Web applications development: Django, Pyramid
@@ -53,9 +58,8 @@ The Zen of Python
   - Working with Big Data
   - Science
   - And more
-- Lately Python is considered the best language for beginer programers
+- Lately Python is considered the best language for beginner programmers
   - Since Python has a fluent and expressional syntax
-
 
 # Installing Python
 
@@ -68,9 +72,10 @@ The Zen of Python
   ```bash
   brew install python
   ```
+
 - On Windows:
   - Download the installer from http://python.org
-  - Add the installation path to System Variables' $PATH
+  - Add the install path to System Variables' `$PATH`
 
 # Python Versions
 ##  TODO
@@ -78,6 +83,7 @@ The Zen of Python
 - Python 2
 - Python 3
 
+<!-- attr: {'data-transition': 'fade-in'} -->
 #  Running Python in the REPL
 
 - REPL or Read-Eval-Print-Loop
@@ -85,14 +91,22 @@ The Zen of Python
   - Used to test python code
   - Start with `$ python`
 
-- _Example:_ print the **numbers from 0 to 4**
+- _Example:_ Тhe **numbers from 0 to 4**
 
 ```python
 for number in range(5):
   print(number)
 ```
 
-- _Example:_ print **the sum** of the numbers **from 5 to 10**
+<!-- attr: {'data-transition': 'fade-in'} -->
+#  Running Python in the REPL
+
+- REPL or Read-Eval-Print-Loop
+  - Run from a Terminal/CMD
+  - Used to test python code
+  - Start with `$ python`
+
+- _Example:_ **the sum** of the numbers **from 5 to 10**
 
 ```python
 sum = 0
@@ -103,17 +117,19 @@ for number in range(5, 10):
 print(sum)
 ```
 
+<!-- attr: {style: 'font-size:0.95em'} -->
+#  Running Python in the REPL
+
 - Significant whitespace is a very important part of Python
 
-
-- **Significant whitespace** is a way to write code in python
+- **Significant whitespace** marks the scopes in Python
   - This is actually the indentation
-- **Significant whitespace** creates **blocks** in python code
-  - It is the equivalent of curly brackets (`{}`) in other languages
+    - It is the equivalent of curly brackets (`{}`) in other languages
   - Good practices say **Use four spaces for indent**
 
 <!-- section start -->
 
+<!-- attr: {class: 'slide-section'} -->
 # Data Types in Python
 ##  int, float, etc..
 
@@ -131,21 +147,22 @@ print(sum)
   - `str` - string values
     - sequence of characters
 
+<!-- attr: {class: 'slide-section'} -->
 # Data Types
 ##  [Demo](http://)
 
 <!-- section start -->
 
+<!-- attr: {class: 'slide-section'} -->
 # Control-flow Structures
 ##  if-elif-else
 
-
+<!-- attr: {hasScriptWrapper: true} -->
 # Control-flow Structures
 
 - Python has conditionals:
 
 ```python
-if conditionOne:
   # run code if conditionOne is True
 elif conditionTwo:
   # run code if conditionOne is False
@@ -154,9 +171,9 @@ else
   # run if both conditionOne and conditionTwo are False
 ```
 
-  - The conditions are True-like and False-like
-    - `""`(empty string), `0`, `None` are evaluated to `False`
-    - **Non-empty strings**, **any number** or **object** are evaluated to `True`
+- The conditions are True-like and False-like
+  - `""` (empty string), `0`, `None` are evaluated to `False`
+  - **Non-empty strings**, **any number** or **object** are evaluated to `True`
 
 # Control-flow Structures
 ##  [Demo](http://)
@@ -320,7 +337,7 @@ musicPreferences = {
 # Tuples
 ## List of immutable objects
 
-#
+# Tuples
 
 - A tuple is a sequence of immutable objects
   - Much like lists, but their values cannot be changed
@@ -333,6 +350,12 @@ for lang in languages:
   print(lang)
 print("Number of languages: {0}".format(len(languages))
 ```
+
+# Tuples
+##  [Demo](http://)
+
+# Comprehensions
+##  TODO
 
 <!-- section start -->
 
