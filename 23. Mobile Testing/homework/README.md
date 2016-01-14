@@ -1,6 +1,6 @@
 # Mobile Testing
 ## Homework
-Test Application [https://github.com/TelerikAcademy/QA-Academy/blob/master/24.%20Mobile%20Testing/Android%20Demos/testapp/fitness-debug.apk?raw=true](https://github.com/TelerikAcademy/QA-Academy/blob/master/24.%20Mobile%20Testing/Android%20Demos/testapp/fitness-debug.apk?raw=true)
+Test Application [https://github.com/TelerikAcademy/QA-Academy/tree/master/23.%20Mobile%20Testing/Android%20Demos/testapp/fitness-debug.apk?raw=true](https://github.com/TelerikAcademy/QA-Academy/tree/master/23.%20Mobile%20Testing/Android%20Demos/testapp/fitness-debug.apk?raw=true)
 
 1. Switch vibrate and sound switches to OFF and verify
 
