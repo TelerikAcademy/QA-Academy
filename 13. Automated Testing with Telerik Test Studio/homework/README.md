@@ -25,7 +25,7 @@ Below are some sample workflows. Create Tests for them.
 * Go to [http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html](http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html) and record a test for dragging and dropping elements. Record the action of positioning the right capitals to the right countries and verify that in each country div there is text containing their capitals. 
 
 </br>
-<img src="images/drag&drop.png" />
+<img src="images/dragdrop.png" />
 
 * Go to [http://demos.telerik.com/silverlight/](http://demos.telerik.com/silverlight/) and follow the Silverlight Demos link. From “All controls” select Gauge and go to “Weather” example. Verify that the right example is open (The header should be Weather Station, the description should have header Gauge and subtitle Weather). Verify that the date shown next to the clock is todays date (make sure your test won’t fail tomorrow).
 
