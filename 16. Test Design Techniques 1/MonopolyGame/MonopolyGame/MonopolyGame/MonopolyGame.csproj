@@ -54,10 +54,10 @@
     <Reference Include="System.Web.Mobile" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="Telerik.Web.UI">
-      <HintPath>..\lib\RCAJAX\2014.2.722.40\Telerik.Web.UI.dll</HintPath>
+      <HintPath>Libs\Telerik.Web.UI.dll</HintPath>
     </Reference>
     <Reference Include="Telerik.Web.UI.Skins">
-      <HintPath>..\lib\RCAJAX\2014.2.722.40\Telerik.Web.UI.Skins.dll</HintPath>
+      <HintPath>Libs\Telerik.Web.UI.Skins.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -145,7 +145,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>49573</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost/MonopolyGame</IISUrl>
+          <IISUrl>http://localhost:57818/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
@@ -153,7 +153,7 @@
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
-      <UserProperties UseJQuerySupport="True" UseAjaxifiedTemplates="True" />
+      <UserProperties UseAjaxifiedTemplates="True" UseJQuerySupport="True" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>
