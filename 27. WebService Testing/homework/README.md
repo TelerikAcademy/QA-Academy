@@ -12,12 +12,7 @@ Below there are a couple of web services:
 	* Add appropriate assertions.
 	* Use at least two property transfers (e.g. take country’s currency and then use it in GetCountryByCurrency)
 	* If you find bugs, report them.
-	
-* You are given the sample RESTful web service documentation: [https://developers.google.com/maps/documentation/directions/](https://developers.google.com/maps/documentation/directions/).
-Your task is to use SoapUI and create tests for testing required and optional web service parameters: 
- * Create valid and invalid requests.
- * Prepare tests and group them in a suite.
- * Add appropriate assertions.
+
  
 Result:
 As a result of the homework you have to submit two Soap UI projects and if you have found bugs describe them in Excel or Word document.
