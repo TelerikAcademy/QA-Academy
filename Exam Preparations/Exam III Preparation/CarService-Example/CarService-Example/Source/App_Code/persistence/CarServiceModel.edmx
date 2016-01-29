@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="carservicedbModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="carservicedbModelStoreContainer">
+          <EntitySet Name="aspnet_Roles" EntityType="carservicedbModel.Store.aspnet_Roles" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_Users" EntityType="carservicedbModel.Store.aspnet_Users" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_UsersInRoles" EntityType="carservicedbModel.Store.aspnet_UsersInRoles" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Automobile" EntityType="carservicedbModel.Store.Automobile" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="PartInCard" EntityType="carservicedbModel.Store.PartInCard" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RepairCard" EntityType="carservicedbModel.Store.RepairCard" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SparePart" EntityType="carservicedbModel.Store.SparePart" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK__aspnet_Us__RoleI__4AB81AF0" Association="carservicedbModel.Store.FK__aspnet_Us__RoleI__4AB81AF0">
+            <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+            <End Role="aspnet_UsersInRoles" EntitySet="aspnet_UsersInRoles" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Us__RoleI__55009F39" Association="carservicedbModel.Store.FK__aspnet_Us__RoleI__55009F39">
+            <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+            <End Role="aspnet_UsersInRoles" EntitySet="aspnet_UsersInRoles" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Us__UserI__49C3F6B7" Association="carservicedbModel.Store.FK__aspnet_Us__UserI__49C3F6B7">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_UsersInRoles" EntitySet="aspnet_UsersInRoles" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Us__UserI__55F4C372" Association="carservicedbModel.Store.FK__aspnet_Us__UserI__55F4C372">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_UsersInRoles" EntitySet="aspnet_UsersInRoles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PartInCard_RepairCard" Association="carservicedbModel.Store.FK_PartInCard_RepairCard">
+            <End Role="RepairCard" EntitySet="RepairCard" />
+            <End Role="PartInCard" EntitySet="PartInCard" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PartInCard_SparePart" Association="carservicedbModel.Store.FK_PartInCard_SparePart">
+            <End Role="SparePart" EntitySet="SparePart" />
+            <End Role="PartInCard" EntitySet="PartInCard" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RepairCard_aspnet_Users" Association="carservicedbModel.Store.FK_RepairCard_aspnet_Users">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="RepairCard" EntitySet="RepairCard" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RepairCard_Automobile" Association="carservicedbModel.Store.FK_RepairCard_Automobile">
+            <End Role="Automobile" EntitySet="Automobile" />
+            <End Role="RepairCard" EntitySet="RepairCard" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="aspnet_Roles">
+          <Key>
+            <PropertyRef Name="RoleId" />
+          </Key>
+          <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="RoleId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="RoleName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="LoweredRoleName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="Description" Type="nvarchar" MaxLength="256" />
+        </EntityType>
+        <EntityType Name="aspnet_Users">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="LoweredUserName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="MobileAlias" Type="nvarchar" MaxLength="16" />
+          <Property Name="IsAnonymous" Type="bit" Nullable="false" />
+          <Property Name="LastActivityDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_UsersInRoles">
+          <Key>
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="RoleId" />
+          </Key>
+          <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="RoleId" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Automobile">
+          <Key>
+            <PropertyRef Name="AutomobileId" />
+          </Key>
+          <Property Name="AutomobileId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Vin" Type="nvarchar" Nullable="false" MaxLength="10" />
+          <Property Name="Make" Type="nvarchar" MaxLength="50" />
+          <Property Name="Model" Type="nvarchar" MaxLength="50" />
+          <Property Name="MakeYear" Type="date" />
+          <Property Name="ChassisNumber" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="EngineNumber" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="Colour" Type="nvarchar" MaxLength="30" />
+          <Property Name="EngineCub" Type="int" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="Owner" Type="nvarchar" MaxLength="200" />
+          <Property Name="PhoneNumber" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="PartInCard">
+          <Key>
+            <PropertyRef Name="CardId" />
+            <PropertyRef Name="PartId" />
+          </Key>
+          <Property Name="CardId" Type="int" Nullable="false" />
+          <Property Name="PartId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="RepairCard">
+          <Key>
+            <PropertyRef Name="CardId" />
+          </Key>
+          <Property Name="CardId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="AutomobileId" Type="int" Nullable="false" />
+          <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="StartRepair" Type="date" Nullable="false" />
+          <Property Name="FinishRepair" Type="date" />
+          <Property Name="Description" Type="nvarchar" MaxLength="256" />
+          <Property Name="PartPrice" Type="money" Nullable="false" />
+          <Property Name="CardPrice" Type="money" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SparePart">
+          <Key>
+            <PropertyRef Name="PartId" />
+          </Key>
+          <Property Name="PartId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="30" />
+          <Property Name="Price" Type="money" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__aspnet_Us__RoleI__4AB81AF0">
+          <End Role="aspnet_Roles" Type="carservicedbModel.Store.aspnet_Roles" Multiplicity="1" />
+          <End Role="aspnet_UsersInRoles" Type="carservicedbModel.Store.aspnet_UsersInRoles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Roles">
+              <PropertyRef Name="RoleId" />
+            </Principal>
+            <Dependent Role="aspnet_UsersInRoles">
+              <PropertyRef Name="RoleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Us__RoleI__55009F39">
+          <End Role="aspnet_Roles" Type="carservicedbModel.Store.aspnet_Roles" Multiplicity="1" />
+          <End Role="aspnet_UsersInRoles" Type="carservicedbModel.Store.aspnet_UsersInRoles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Roles">
+              <PropertyRef Name="RoleId" />
+            </Principal>
+            <Dependent Role="aspnet_UsersInRoles">
+              <PropertyRef Name="RoleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Us__UserI__49C3F6B7">
+          <End Role="aspnet_Users" Type="carservicedbModel.Store.aspnet_Users" Multiplicity="1" />
+          <End Role="aspnet_UsersInRoles" Type="carservicedbModel.Store.aspnet_UsersInRoles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="aspnet_UsersInRoles">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Us__UserI__55F4C372">
+          <End Role="aspnet_Users" Type="carservicedbModel.Store.aspnet_Users" Multiplicity="1" />
+          <End Role="aspnet_UsersInRoles" Type="carservicedbModel.Store.aspnet_UsersInRoles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="aspnet_UsersInRoles">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PartInCard_RepairCard">
+          <End Role="RepairCard" Type="carservicedbModel.Store.RepairCard" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="PartInCard" Type="carservicedbModel.Store.PartInCard" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RepairCard">
+              <PropertyRef Name="CardId" />
+            </Principal>
+            <Dependent Role="PartInCard">
+              <PropertyRef Name="CardId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PartInCard_SparePart">
+          <End Role="SparePart" Type="carservicedbModel.Store.SparePart" Multiplicity="1" />
+          <End Role="PartInCard" Type="carservicedbModel.Store.PartInCard" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SparePart">
+              <PropertyRef Name="PartId" />
+            </Principal>
+            <Dependent Role="PartInCard">
+              <PropertyRef Name="PartId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RepairCard_aspnet_Users">
+          <End Role="aspnet_Users" Type="carservicedbModel.Store.aspnet_Users" Multiplicity="1" />
+          <End Role="RepairCard" Type="carservicedbModel.Store.RepairCard" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="RepairCard">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RepairCard_Automobile">
+          <End Role="Automobile" Type="carservicedbModel.Store.Automobile" Multiplicity="1" />
+          <End Role="RepairCard" Type="carservicedbModel.Store.RepairCard" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Automobile">
+              <PropertyRef Name="AutomobileId" />
+            </Principal>
+            <Dependent Role="RepairCard">
+              <PropertyRef Name="AutomobileId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="carservicedbModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="aspnet_Roles" EntityType="carservicedbModel.aspnet_Roles" />
+          <EntitySet Name="aspnet_Users" EntityType="carservicedbModel.aspnet_Users" />
+          <EntitySet Name="RepairCards" EntityType="carservicedbModel.RepairCard" />
+          <EntitySet Name="SpareParts" EntityType="carservicedbModel.SparePart" />
+          <AssociationSet Name="FK_RepairCard_aspnet_Users" Association="carservicedbModel.FK_RepairCard_aspnet_Users">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="RepairCard" EntitySet="RepairCards" />
+          </AssociationSet>
+          <AssociationSet Name="aspnet_UsersInRoles" Association="carservicedbModel.aspnet_UsersInRoles">
+            <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+          </AssociationSet>
+          <AssociationSet Name="PartInCard" Association="carservicedbModel.PartInCard">
+            <End Role="RepairCard" EntitySet="RepairCards" />
+            <End Role="SparePart" EntitySet="SpareParts" />
+          </AssociationSet>
+          <EntitySet Name="Automobiles" EntityType="carservicedbModel.Automobile" />
+          <AssociationSet Name="FK_RepairCard_Automobile" Association="carservicedbModel.FK_RepairCard_Automobile">
+            <End Role="Automobile" EntitySet="Automobiles" />
+            <End Role="RepairCard" EntitySet="RepairCards" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="aspnet_Roles">
+          <Key>
+            <PropertyRef Name="RoleId" />
+          </Key>
+          <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+          <Property Name="RoleId" Type="Guid" Nullable="false" />
+          <Property Name="RoleName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="LoweredRoleName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="aspnet_Users" Relationship="carservicedbModel.aspnet_UsersInRoles" FromRole="aspnet_Roles" ToRole="aspnet_Users" />
+        </EntityType>
+        <EntityType Name="aspnet_Users">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+          <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="LoweredUserName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="MobileAlias" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+          <Property Name="IsAnonymous" Type="Boolean" Nullable="false" />
+          <Property Name="LastActivityDate" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="RepairCards" Relationship="carservicedbModel.FK_RepairCard_aspnet_Users" FromRole="aspnet_Users" ToRole="RepairCard" />
+          <NavigationProperty Name="aspnet_Roles" Relationship="carservicedbModel.aspnet_UsersInRoles" FromRole="aspnet_Users" ToRole="aspnet_Roles" />
+        </EntityType>
+        <EntityType Name="RepairCard">
+          <Key>
+            <PropertyRef Name="CardId" />
+          </Key>
+          <Property Name="CardId" Type="Int32" Nullable="false" />
+          <Property Name="AutomobileId" Type="Int32" Nullable="false" />
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+          <Property Name="StartRepair" Type="DateTime" Nullable="false" />
+          <Property Name="FinishRepair" Type="DateTime" />
+          <Property Name="Description" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="PartPrice" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+          <Property Name="CardPrice" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+          <NavigationProperty Name="aspnet_Users" Relationship="carservicedbModel.FK_RepairCard_aspnet_Users" FromRole="RepairCard" ToRole="aspnet_Users" />
+          <NavigationProperty Name="SpareParts" Relationship="carservicedbModel.PartInCard" FromRole="RepairCard" ToRole="SparePart" />
+          <NavigationProperty Name="Automobile" Relationship="carservicedbModel.FK_RepairCard_Automobile" FromRole="RepairCard" ToRole="Automobile" />
+        </EntityType>
+        <EntityType Name="SparePart">
+          <Key>
+            <PropertyRef Name="PartId" />
+          </Key>
+          <Property Name="PartId" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Price" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="RepairCards" Relationship="carservicedbModel.PartInCard" FromRole="SparePart" ToRole="RepairCard" />
+        </EntityType>
+        <Association Name="FK_RepairCard_aspnet_Users">
+          <End Role="aspnet_Users" Type="carservicedbModel.aspnet_Users" Multiplicity="1" />
+          <End Role="RepairCard" Type="carservicedbModel.RepairCard" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="RepairCard">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="aspnet_UsersInRoles">
+          <End Role="aspnet_Roles" Type="carservicedbModel.aspnet_Roles" Multiplicity="*" />
+          <End Role="aspnet_Users" Type="carservicedbModel.aspnet_Users" Multiplicity="*" />
+        </Association>
+        <Association Name="PartInCard">
+          <End Role="RepairCard" Type="carservicedbModel.RepairCard" Multiplicity="*" />
+          <End Role="SparePart" Type="carservicedbModel.SparePart" Multiplicity="*" />
+        </Association>
+        <EntityType Name="Automobile">
+          <Key>
+            <PropertyRef Name="AutomobileId" />
+          </Key>
+          <Property Type="Int32" Name="AutomobileId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Vin" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Make" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Model" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="MakeYear" />
+          <Property Type="String" Name="ChassisNumber" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EngineNumber" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Colour" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="EngineCub" />
+          <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Owner" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PhoneNumber" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="RepairCards" Relationship="carservicedbModel.FK_RepairCard_Automobile" FromRole="Automobile" ToRole="RepairCard" />
+        </EntityType>
+        <Association Name="FK_RepairCard_Automobile">
+          <End Type="carservicedbModel.Automobile" Role="Automobile" Multiplicity="1" />
+          <End Type="carservicedbModel.RepairCard" Role="RepairCard" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Automobile">
+              <PropertyRef Name="AutomobileId" />
+            </Principal>
+            <Dependent Role="RepairCard">
+              <PropertyRef Name="AutomobileId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="carservicedbModelStoreContainer" CdmEntityContainer="Entities">
+          <EntitySetMapping Name="aspnet_Roles"><EntityTypeMapping TypeName="carservicedbModel.aspnet_Roles"><MappingFragment StoreEntitySet="aspnet_Roles">
+            <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+            <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+            <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+            <ScalarProperty Name="LoweredRoleName" ColumnName="LoweredRoleName" />
+            <ScalarProperty Name="Description" ColumnName="Description" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="aspnet_Users"><EntityTypeMapping TypeName="carservicedbModel.aspnet_Users"><MappingFragment StoreEntitySet="aspnet_Users">
+            <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+            <ScalarProperty Name="UserId" ColumnName="UserId" />
+            <ScalarProperty Name="UserName" ColumnName="UserName" />
+            <ScalarProperty Name="LoweredUserName" ColumnName="LoweredUserName" />
+            <ScalarProperty Name="MobileAlias" ColumnName="MobileAlias" />
+            <ScalarProperty Name="IsAnonymous" ColumnName="IsAnonymous" />
+            <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="RepairCards"><EntityTypeMapping TypeName="carservicedbModel.RepairCard"><MappingFragment StoreEntitySet="RepairCard">
+            <ScalarProperty Name="CardId" ColumnName="CardId" />
+            <ScalarProperty Name="AutomobileId" ColumnName="AutomobileId" />
+            <ScalarProperty Name="UserId" ColumnName="UserId" />
+            <ScalarProperty Name="StartRepair" ColumnName="StartRepair" />
+            <ScalarProperty Name="FinishRepair" ColumnName="FinishRepair" />
+            <ScalarProperty Name="Description" ColumnName="Description" />
+            <ScalarProperty Name="PartPrice" ColumnName="PartPrice" />
+            <ScalarProperty Name="CardPrice" ColumnName="CardPrice" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="SpareParts"><EntityTypeMapping TypeName="carservicedbModel.SparePart"><MappingFragment StoreEntitySet="SparePart">
+            <ScalarProperty Name="PartId" ColumnName="PartId" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="Price" ColumnName="Price" />
+            <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <AssociationSetMapping Name="aspnet_UsersInRoles" TypeName="carservicedbModel.aspnet_UsersInRoles" StoreEntitySet="aspnet_UsersInRoles">
+            <EndProperty Name="aspnet_Roles">
+              <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+            </EndProperty>
+            <EndProperty Name="aspnet_Users">
+              <ScalarProperty Name="UserId" ColumnName="UserId" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="PartInCard" TypeName="carservicedbModel.PartInCard" StoreEntitySet="PartInCard">
+            <EndProperty Name="RepairCard">
+              <ScalarProperty Name="CardId" ColumnName="CardId" />
+            </EndProperty>
+            <EndProperty Name="SparePart">
+              <ScalarProperty Name="PartId" ColumnName="PartId" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <EntitySetMapping Name="Automobiles">
+            <EntityTypeMapping TypeName="carservicedbModel.Automobile">
+              <MappingFragment StoreEntitySet="Automobile">
+                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+                <ScalarProperty Name="Owner" ColumnName="Owner" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="EngineCub" ColumnName="EngineCub" />
+                <ScalarProperty Name="Colour" ColumnName="Colour" />
+                <ScalarProperty Name="EngineNumber" ColumnName="EngineNumber" />
+                <ScalarProperty Name="ChassisNumber" ColumnName="ChassisNumber" />
+                <ScalarProperty Name="MakeYear" ColumnName="MakeYear" />
+                <ScalarProperty Name="Model" ColumnName="Model" />
+                <ScalarProperty Name="Make" ColumnName="Make" />
+                <ScalarProperty Name="Vin" ColumnName="Vin" />
+                <ScalarProperty Name="AutomobileId" ColumnName="AutomobileId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="CarServiceModel">
+        <EntityTypeShape EntityType="carservicedbModel.aspnet_Roles" Width="1.5" PointX="0.75" PointY="1.375" Height="1.9210009765624998" IsExpanded="true" />
+        <EntityTypeShape EntityType="carservicedbModel.aspnet_Users" Width="1.5" PointX="3" PointY="1.125" Height="2.4140429687499996" IsExpanded="true" />
+        <EntityTypeShape EntityType="carservicedbModel.RepairCard" Width="1.5" PointX="5.25" PointY="1" Height="2.7427376302083335" IsExpanded="true" />
+        <EntityTypeShape EntityType="carservicedbModel.SparePart" Width="1.5" PointX="7.5" PointY="1.5" Height="1.7566536458333335" IsExpanded="true" />
+        <AssociationConnector Association="carservicedbModel.FK_RepairCard_aspnet_Users" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="2.49974609375" />
+          <ConnectorPoint PointX="5.25" PointY="2.49974609375" />
+        </AssociationConnector>
+        <AssociationConnector Association="carservicedbModel.aspnet_UsersInRoles" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="2.33550048828125" />
+          <ConnectorPoint PointX="3" PointY="2.33550048828125" />
+        </AssociationConnector>
+        <AssociationConnector Association="carservicedbModel.PartInCard" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="2.4901432291666667" />
+          <ConnectorPoint PointX="7.5" PointY="2.4901432291666667" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="carservicedbModel.Automobile" Width="1.5" PointX="3" PointY="4.625" Height="3.5186979166666674" />
+        <AssociationConnector Association="carservicedbModel.FK_RepairCard_Automobile" >
+          <ConnectorPoint PointX="4.5" PointY="6.3843489583333337" />
+          <ConnectorPoint PointX="6" PointY="6.3843489583333337" />
+          <ConnectorPoint PointX="6" PointY="4.1340950520833326" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

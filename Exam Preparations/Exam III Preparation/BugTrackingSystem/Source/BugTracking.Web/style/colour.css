@@ -1,0 +1,86 @@
+html{height: 100%;}
+
+body
+{ background: #6F7A86;
+  color: #5A6370;
+}
+
+blockquote
+{ background: #FFFFFF;
+  color: #5A6370;
+  border-color: #767676;
+}
+
+#main
+{ background: #FFFFFF url(back.png) repeat-y;
+  color: #5A6370;
+}
+
+#links, #footer, #menu, #menu li a
+{ background: #FFFFFF url(menu.png);
+  color: #D1D3D7;
+  border-color: #D7D7D7;
+}
+
+#links a, #footer a, #links a:hover, #footer a:hover
+{ background: transparent;
+  color: #D1D3D7;
+}
+
+#logo
+{ background: #FFFFFF url(logo.jpg) no-repeat;
+  color: #5A6370;
+}
+
+#logo h1
+{ background: transparent;
+  color: #1775D5;
+  border-color: #89A9C7;
+}
+
+h1, #column2 h1
+{ background: transparent;
+  color: #1775D5;
+  border-color: #89A9C7;
+}
+
+#menu li a:hover, #menu li a#selected, #menu li a#selected:hover
+{ background: #FFFFFF url(menu_hover.png);
+  color: #484E56;
+} 
+
+#content, #column2 a, #column2 a:hover
+{ background: transparent;
+  color: #5A6370;
+}
+
+.sidebaritem, .sidebaritem a, .sidebaritem a:hover
+{ background: transparent;
+  color: #D1D3D7;
+}
+
+.sbihead
+{ background: #FFFFFF url(sbi_header.png);
+  color: #484E56;
+}
+
+.sbihead h1
+{ background: transparent;
+  color: #484E56;
+}
+
+.sbilinks li a
+{ background: #FFFFFF url(link.png);
+  color: #D1D3D7;
+} 
+
+.sbilinks li a:hover
+{ background: #B7B7B7;
+  color: #1775D5;
+} 
+
+input, textarea
+{ background: #FFFFFF;
+  color: #5A6370;
+  border-color: #89A9C7;
+}

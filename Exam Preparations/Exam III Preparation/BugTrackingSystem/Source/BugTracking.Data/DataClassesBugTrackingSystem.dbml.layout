@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataClassesBugTrackingSystem">
+  <DataContextMoniker Name="/DataClassesBugTrackingSystemDataContext" />
+  <nestedChildShapes>
+    <classShape Id="0924553b-91fe-4f5d-b81d-84e92255bcfc" absoluteBounds="2, 0.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DataClassesBugTrackingSystemDataContext/Bug" />
+      <nestedChildShapes>
+        <elementListCompartment Id="469c55e6-e11b-438e-aa87-8a432fc05760" absoluteBounds="2.0149999999999997, 1.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6d6dd911-8520-4099-97fb-d002d8000f6e" absoluteBounds="6, 0.875, 2, 1.3862939453125">
+      <DataClassMoniker Name="/DataClassesBugTrackingSystemDataContext/Project" />
+      <nestedChildShapes>
+        <elementListCompartment Id="63f81c1c-7d9b-455c-aa24-3435e08e30bd" absoluteBounds="6.015, 1.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6 : 1.50525024414063); (4 : 1.50525024414063)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClassesBugTrackingSystemDataContext/Project/Project_Bug" />
+      <nodes>
+        <classShapeMoniker Id="6d6dd911-8520-4099-97fb-d002d8000f6e" />
+        <classShapeMoniker Id="0924553b-91fe-4f5d-b81d-84e92255bcfc" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="accc4f95-5144-4790-b66d-ed150e6ba173" absoluteBounds="2, 3.375, 2, 2.3478011067708326">
+      <DataClassMoniker Name="/DataClassesBugTrackingSystemDataContext/Tester" />
+      <nestedChildShapes>
+        <elementListCompartment Id="82bfe0ce-0181-4d49-97f3-c739022f4c03" absoluteBounds="2.0150000000000006, 3.835, 1.9700000000000002, 1.7878011067708333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3 : 3.375); (3 : 2.66788981119792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClassesBugTrackingSystemDataContext/Tester/Tester_Bug" />
+      <nodes>
+        <classShapeMoniker Id="accc4f95-5144-4790-b66d-ed150e6ba173" />
+        <classShapeMoniker Id="0924553b-91fe-4f5d-b81d-84e92255bcfc" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

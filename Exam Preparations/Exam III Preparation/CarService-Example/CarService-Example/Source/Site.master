@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="pageTitle" runat="server"></asp:ContentPlaceHolder>
+    </title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <form id="form" runat="server">
+
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <asp:HyperLink NavigateUrl="~/" runat="server"><h1>Car Service</h1> </asp:HyperLink>
+            </div>
+            <div class="loginDisplay">                
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        [<a href="~/Login.aspx" ID="HeadLoginStatus" runat="server">Log In</a>]
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Welcome <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
+                        [<asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/"/>]
+                        [<asp:LinkButton ID="LinkButtonUserInfo" runat="server" OnClick="LinkButtonUserInfo_Click">User Info</asp:LinkButton>]
+                    </LoggedInTemplate>
+                </asp:LoginView>                                          
+            </div>       
+            <div class="clear hideSkiplink">
+			    <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/" Text="Home" />
+                        <asp:MenuItem NavigateUrl="~/Members/Cars/Cars.aspx" Text="Cars">
+                            <asp:MenuItem NavigateUrl="~/Members/Cars/AddCar.aspx" Text="Add Car" />
+                            <asp:MenuItem NavigateUrl="~/Members/Cars/FindCar.aspx" Text="Find Car" />
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Members/RepairCards/RepairCards.aspx" Text="Repair Cards" >
+                            <asp:MenuItem NavigateUrl="~/Members/RepairCards/AddRepairCard.aspx" Text="Add Repair Card" />
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Admin">
+                            <asp:MenuItem NavigateUrl="~/Admin/Users/Users.aspx" Text="Users" />
+                            <asp:MenuItem NavigateUrl="~/Admin/SpareParts/SpareParts.aspx" Text="Spare Parts" />
+                        </asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="nav-path">			
+            <asp:SiteMapPath ID="carServiceSiteMap" runat="server" />            
+		</div>        
+
+        <div class="main">
+            <asp:ContentPlaceHolder id="pageBody" runat="server">
+                
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div id="footer">
+        <span>&copy; 2010 - 2011 Copyright <a href="http://academy.telerik.com/" target="_blank">Telerik Academy</a>. All rights reserved.</span>
+		<span><asp:HyperLink runat="server" NavigateUrl="~/Contacts.aspx">Contact Us</asp:HyperLink></span>
+    </div>
+
+    </form>
+
+</body>
+</html>

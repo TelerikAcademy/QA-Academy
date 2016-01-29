@@ -1,0 +1,251 @@
+/* global */
+html{height: 100%;}
+
+body
+{ font-family: verdana, arial, sans-serif;
+  padding: 0px;
+  margin: 0px;
+  font-size: .68em;
+}
+
+p
+{ margin: 0px;
+  padding: 0px 0px 16px 0px;
+  line-height: 1.7em;
+}
+
+h1
+{ font-family: arial, sans-serif;
+  letter-spacing: .1em;
+}
+
+h2
+{ margin: 0px;
+  padding: 0px 0px 4px 0px;
+  font-size: 100%;
+}
+
+img{border: 0px;}
+
+a{outline: none;}
+
+/* main container */
+#main
+{ width: 780px;
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+/* links above the logo / footer */
+#links, #footer
+{ margin-left: auto; 
+  margin-right: auto;
+  padding: 10px 21px 0px 19px;
+  width: 720px;
+  height: 26px;
+  font-size: 94%;
+}
+
+#links{text-align: right;}
+
+#footer{text-align: center;}
+
+#links a, #footer a{text-decoration: none;}
+
+#links a:hover, #footer a:hover{text-decoration: underline;}
+
+/* logo */
+#logo
+{ margin-left: auto; 
+  margin-right: auto;
+  width: 760px;
+  height: 100px;
+  text-align: left;
+}
+
+#logo h1
+{ margin: 0px;
+  padding: 41px 0px 0px 19px;
+  font-size: 250%;
+  letter-spacing: .2em;
+}
+
+/* main content */
+#content
+{ margin-left: auto; 
+  margin-right: auto;
+  width: 760px;
+  height: auto;
+  padding: 0px;
+  overflow: hidden;
+} 
+
+/* column 1 - contains sidebar items */
+#column1
+{ width: 207px;
+  float: right;
+  padding: 16px 0px 15px 0px;
+}
+
+.sidebaritem
+{ text-align: left;
+  width: 188px;
+  float: left;
+  margin: 0px 0px 25px 0px;
+}
+
+.sbihead
+{ height: 14px;
+  width: 188px;
+  padding: 5px 0px 5px 19px;
+  text-transform: uppercase;
+}
+
+.sbihead h1
+{ padding: 0px; 
+  margin: 0px; 
+  font-weight: bold;
+  font-size: 112%;
+}
+
+.sbicontent{padding: 14px 8px 8px 19px;}
+
+.sbicontent p
+{ line-height: 14px; 
+  padding: 0px 0px 8px 0px;
+}
+
+.sbilinks{padding: 0px;}
+
+.sbilinks ul{margin: 0px auto;} 
+
+.sbilinks li 
+{ margin: 0px; 
+  float: left; 
+  list-style: none; 
+} 
+
+.sbilinks li a , .sbilinks li a:hover
+{ float: left; 
+  height: 16px;
+  text-decoration: none; 
+  padding: 5px 0px 4px 19px;
+  width: 188px;
+  border: 0px;
+} 
+
+/* column 2 - page content */
+#column2
+{ text-align: justify;
+  width: 512px;
+  float: left;
+  padding: 12px 3px 15px 19px;
+}
+
+#column2 h1
+{ padding: 6px 0px 4px 0px; 
+  margin: 0px 0px 12px 0px; 
+  border-bottom: 1px solid;
+  font-size: 150%;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+div.pager
+{
+    text-align:center;    
+}
+
+div.pager a, div.pager a:hover
+{ padding: 0px 0px 2px 0px;
+  text-decoration: none;
+  border-bottom: 1px dashed;
+}
+
+div.pager a:hover, div.pager a:hover
+{border-bottom: 1px solid;}
+
+/* contact page - form layout */
+form{margin-top: 0px;}
+
+div.row
+{ clear: both;
+  width: 448px;
+}
+
+div.row span.formlabel 
+{ float: left;
+  width: 150px;
+  text-align: left;
+}
+
+div.row span.forminput
+{ float: right;
+  text-align: right;
+} 
+
+div.spacer
+{ clear: both;
+  width: 80px;
+}
+
+input, textarea
+{ width: 259px; 
+  font-family: verdana, arial, sans-serif;
+  border: 1px solid;
+  font-size: 100%;
+  margin: 2px;
+}
+
+ul.buttons
+{	
+	padding-right: 1px;
+	margin-top: 10px;
+	margin-bottom: 0;
+	float: right;
+}
+
+ul.buttons li 
+{
+	list-style-type: none;
+	display: block;
+	float: left;
+	padding-left: 5px;	
+}
+
+.odd
+{
+    border-bottom: 1px solid #EBEBEB;
+    background-color: #EBEBEB;    
+}
+
+div.form table
+{
+    border:1px solid Black;
+    margin:auto;
+    text-align:center;
+}
+
+div.form table td
+{
+    width:180px;
+    height:25px;
+}
+
+div.form table td a, div.form table th a
+{
+    text-decoration: none;
+    border-bottom:none;    
+}
+
+div.form table td a:hover, div.form table th a:hover
+{
+    text-decoration: none;
+    border-bottom: 1px dashed;
+}
+
+div.check input
+{
+    width:40px;
+    border:none;
+}

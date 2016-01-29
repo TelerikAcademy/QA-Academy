@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="~/Default.aspx" title="Home" description="Home">
+      <siteMapNode url="~/Login.aspx" title="Login" description="Login" />
+      <siteMapNode url="~/Members/Cars/Cars.aspx" title="Cars" description="Cars" >
+        <siteMapNode url="~/Members/Cars/AddCar.aspx" title="Add Car" description="Add Car" />
+        <siteMapNode url="~/Members/Cars/FindCar.aspx" title="Find Car" description="Find Car" />
+      </siteMapNode>
+      <siteMapNode url="~/Members/RepairCards/RepairCards.aspx" title="Repair Cards" description="Repair Cards" >
+        <siteMapNode url="~/Members/RepairCards/AddRepairCard.aspx" title="Add Repair Card" description="Add Repair Card" />
+        <siteMapNode url="~/Members/RepairCards/EditRepairCard.aspx" title="Edit Repair Card" description="Edit Repair Card" />        
+      </siteMapNode>
+      <siteMapNode title="Admin" description="Admin" >
+        <siteMapNode url="~/Admin/Users/Users.aspx" title="Users" description="Users" >
+          <siteMapNode url="~/Admin/Users/AddUser.aspx" title="Add User" description="Add User" />
+          <siteMapNode url="~/Admin/Users/EditUser.aspx" title="Edit User" description="Edit User" />
+        </siteMapNode>
+        <siteMapNode url="~/Admin/SpareParts/SpareParts.aspx" title="Spare Parts" description="Spare Parts">
+          <siteMapNode url="~/Admin/SpareParts/AddSparePart.aspx" title="Add Spare Part" description="Add Spare Part" />
+        </siteMapNode>          
+      </siteMapNode>
+    </siteMapNode>
+</siteMap>

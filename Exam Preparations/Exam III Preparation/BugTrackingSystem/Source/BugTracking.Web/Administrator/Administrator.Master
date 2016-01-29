@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Administrator.master.cs" Inherits="BugTrackingSystem.Administrator.Administrator" %>
+
+<%@ Register Src="~/UserControls/UserProfile.ascx" TagName="UserProfile" TagPrefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+  <link rel="stylesheet" type="text/css" href="~/style/style.css" />
+  <link rel="stylesheet" type="text/css" href="~/style/colour.css" />
+  <title></title>
+  <asp:ContentPlaceHolder ID="head" runat="server">
+  </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="main">
+    <div id="links">
+      <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+            <AnonymousTemplate>
+                [ <a href="~/Default.aspx" ID="HeadLoginStatus" runat="server">Вход</a> ]
+            </AnonymousTemplate>
+            <LoggedInTemplate>
+                Добре дошъл <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
+                [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Изход" LogoutPageUrl="~/"/> ]
+            </LoggedInTemplate>
+      </asp:LoginView>
+    </div>
+    <div id="logo"><h1>Система за следене на грешки</h1></div>
+    <div id="content">
+      <div id="column1">
+        <div class="sidebaritem">
+          <div class="sbihead">
+            <h1>Меню</h1>
+          </div>
+          <div class="sbilinks">
+            <asp:Menu runat="server" ID="administratorMenu">
+            <Items>
+                <asp:MenuItem NavigateUrl="Projects.aspx" Text="Проекти"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="Testers.aspx" Text="Тестери"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Inquiries/Inquiries.aspx?mode=administrator" Text="Справки"></asp:MenuItem>
+            </Items>
+         </asp:Menu>
+          </div>
+        </div>
+        <div class="sidebaritem">
+          <div class="sbihead">
+            <h1>Потребител</h1>
+          </div>
+          <div class="sbicontent">
+            <uc1:UserProfile runat="server" />
+          </div>
+        </div>
+      </div>
+      <div id="column2">
+      <asp:ContentPlaceHolder ID="mainContent" runat="server">
+      </asp:ContentPlaceHolder>
+      </div>
+    </div>
+    <div id="footer">
+        Система за следене на грешки  <%=DateTime.Now.Year.ToString() %>
+    </div>
+  </div>
+    </form>
+</body>
+</html>

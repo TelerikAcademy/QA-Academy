@@ -48,6 +48,7 @@ You are given the source code of a small Web application (CarService-Example.rar
 * Once you have found the XSS vulnerability, exploit it by inserting a script that causes a button "Bug" to appear somewhere on the page. When the button is clicked – a pop-up dialog should appear with the message "Bug". You may need to search the Internet for the proper script code in case you are not familiar with JavaScript.
 	
 Notes: you may need to attach the database in SQL Server and use Visual Studio to compile, inspect and run the Web application.
+
 Submit your solution to this problem as screenshots where the vulnerable elements and the results of your XSS attack/s should be pointed. Use labels in the screenshots or a separate text file to submit the exact attack code you have used.
 
 **Testing for SQL Injection Vulnerabilities** </br>
@@ -67,9 +68,9 @@ Submit your solution of this problem as screenshots where the vulnerable element
 ### WebService Testing
 You are given the sample web service application: http://webservices.daehosting.com/services/TemperatureConversions.wso?WSDL.
 Your task is to use SoapUI and create tests for testing the web service: 
-* Create requests for testing the methods CelciusToFahrenheit and FahrenheitToCelcius. Create appropriate valid and invalid cases.
-* Create a test suite with the tests from CelciusToFahrenheit and FahrenheitToCelcius and add appropriate assertions to them. (For content assertions – make sure your assertions validate the specific element wanted – not just presence of the value in the response in general.)
-* Make a property transfer (in the created test suite) of the field CelciusToFahrenheitResult from the response of a valid request for method CelciusToFahrenheit and use it in the field nFahrenheit for a valid request for the method FahrenheitToCelcius.
+* Create requests for testing the methods *CelciusToFahrenheit* and *FahrenheitToCelcius*. Create appropriate valid and invalid cases.
+* Create a test suite with the tests from *CelciusToFahrenheit* and *FahrenheitToCelcius* and add appropriate assertions to them. (For content assertions – make sure your assertions validate the specific element wanted – not just presence of the value in the response in general.)
+* Make a property transfer (in the created test suite) of the field *CelciusToFahrenheitResult* from the response of a valid request for method *CelciusToFahrenheit* and use it in the field *nFahrenheit* for a valid request for the method *FahrenheitToCelcius*.
 * Create a load test for one of the methods with 4 users and duration of 90 seconds.
 
 As a result of this exam problem you should submit your project created with SoapUI. 
