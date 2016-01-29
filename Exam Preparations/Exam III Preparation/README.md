@@ -8,7 +8,7 @@
 
 As a result of this exam problem you should submit your Visual Studio project and Excel reports.
 
-* You are given the source code of a small Web application (CarService-Example). Your task is to deploy the application in IIS on your local machine and perform the following tests:
+* You are given the source code of a small Web application - *CarService-Example*. Your task is to deploy the application in IIS on your local machine and perform the following tests:
 	* Create performance tests for testing the application.
 		* Create one performance test for ONE of the pages;
 		* Create second performance tests with THREE pages in it.
@@ -20,7 +20,7 @@ As a result of this exam problem you should submit your project, created with Vi
 
 ### Security testing
 **Testing for Cross Site Scripting (XSS) Vulnerabilities** </br>
-You are given the source code of a small Web application (BugTrackingSystem.rar). Your task is to run the application on your local machine and perform the following security testing:
+You are given the source code of a small Web application - *BugTrackingSystem*. Your task is to run the application on your local machine and perform the following security testing:
 * Find which part of the site is vulnerable to Cross Site Scripting (XSS). Note that the site might accept an XSS attack through a particular element, but the result of the attack might be manifested in another part of the site so search carefully.
 * Once you have found the XSS vulnerability, exploit it by inserting a script that causes a hyperlink "Hack" to appear somewhere on the page pointing to http://www.blog.com.
 	
@@ -43,7 +43,7 @@ Use the same Web application given as source code for the previous problem but t
 Submit your solution of this problem as screenshots where the vulnerable elements and the results of your URL Manipulation attack/s should be pointed. Use labels in the screenshots or a separate text file to submit the exact input used for the URL Manipulation attack.
 
 **Testing for Cross Site Scripting (XSS) Vulnerabilities**</br>
-You are given the source code of a small Web application (CarService-Example.rar). Your task is to run the application on your local machine and perform the following security testing:
+You are given the source code of a small Web application (CarService-Example). Your task is to run the application on your local machine and perform the following security testing:
 * Find which part of the site is vulnerable to Cross Site Scripting (XSS). Note that the site might accept an XSS attack through a particular element, but the result of the attack might be manifested in another part of the site so search carefully.
 * Once you have found the XSS vulnerability, exploit it by inserting a script that causes a button "Bug" to appear somewhere on the page. When the button is clicked – a pop-up dialog should appear with the message "Bug". You may need to search the Internet for the proper script code in case you are not familiar with JavaScript.
 	
