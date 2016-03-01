@@ -1,0 +1,7 @@
+Rest Tutorial:
+https://www.youtube.com/watch?v=kfNn9OuuEyU
+http://www.testautomationguru.com/how-to-test-rest-api-using-jmeter/
+http://www.testautomationguru.com/how-to-test-rest-api-using-jmeter/
+
+Jmeter plugins:
+http://jmeter-plugins.org/wiki/Start/
